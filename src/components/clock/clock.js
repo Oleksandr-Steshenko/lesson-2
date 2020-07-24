@@ -46,7 +46,7 @@ export default class AwesomeClock extends Component {
       }
     });
     if (this.state.simpleWatch === true) {
-      this.setState({ class: "faded" });
+      this.setState({ class: "hide" });
       setTimeout(() => {
         this.setState({
           time: moment().format("LTS"),
@@ -56,7 +56,7 @@ export default class AwesomeClock extends Component {
         });
       }, 200);
     } else if (this.state.fullWatch === true) {
-      this.setState({ class: "faded" });
+      this.setState({ class: "hide" });
       setTimeout(() => {
         this.setState({
           time: moment().format("L"),
@@ -66,7 +66,7 @@ export default class AwesomeClock extends Component {
         });
       }, 200);
     } else if (this.state.fullDate === true) {
-      this.setState({ class: "faded" });
+      this.setState({ class: "hide" });
       setTimeout(() => {
         this.setState({
           time: moment().format("LL"),
@@ -76,7 +76,7 @@ export default class AwesomeClock extends Component {
         });
       }, 200);
     } else if (this.state.monthDate === true) {
-      this.setState({ class: "faded" });
+      this.setState({ class: "hide" });
       setTimeout(() => {
         this.setState({
           time: moment().format("LT"),
